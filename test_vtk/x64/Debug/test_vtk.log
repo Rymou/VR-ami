@@ -1,0 +1,1 @@
+﻿vtkInteractionStyle-8.0.lib(vtkInteractionStyle-8.0.dll) : fatal error LNK1112: type d'ordinateur module 'x86' en conflit avec le type d'ordinateur cible 'x64'

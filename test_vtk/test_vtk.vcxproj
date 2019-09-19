@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{294B9AD7-FE08-44E0-80E9-678A24760A36}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>testvtk</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\VTK-Vers2\VTK\include\vtk-8.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VTK-Vers2\VTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\VTK-Vers2\VTK\lib\vtkalglib-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkChartsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionStyle-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonComputationalGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonDataModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonExecutionModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMisc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonSystem-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonTransforms-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDICOMParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistryOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexoIIc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexpat-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersExtraction-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersFlowPaths-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneric-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHyperTree-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersModeling-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallelImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersPoints-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersProgrammable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSelection-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSMP-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTexture-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTopology-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersVerdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkfreetype-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkGeovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkgl2ps-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkglew-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5_hl-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingFourier-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMorphological-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStencil-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisLayout-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionWidgets-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOEnSight-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExodus-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExportOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLegacy-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLSDyna-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMINC-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMovie-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIONetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallelXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOPLY-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOSQL-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOTecplotTable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOVideo-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXMLParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjpeg-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjsoncpp-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibharu-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibxml2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklz4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkmetaio-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkNetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtknetcdf_c++.lib;C:\VTK-Vers2\VTK\lib\vtkoggtheora-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkParallelCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkpng-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkproj4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingAnnotation-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContextOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingFreeType-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingGL2PSOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLabel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLOD-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolume-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolumeOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksqlite-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksys-8.0.lib;C:\VTK-Vers2\VTK\lib\vtktiff-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkverdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkzlib-8.0.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\VTK-Vers2\VTK\include\vtk-8.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VTK-Vers2\VTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\VTK-Vers2\VTK\lib\vtkalglib-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkChartsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionStyle-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonComputationalGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonDataModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonExecutionModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMisc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonSystem-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonTransforms-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDICOMParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistryOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexoIIc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexpat-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersExtraction-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersFlowPaths-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneric-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHyperTree-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersModeling-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallelImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersPoints-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersProgrammable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSelection-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSMP-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTexture-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTopology-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersVerdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkfreetype-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkGeovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkgl2ps-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkglew-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5_hl-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingFourier-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMorphological-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStencil-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisLayout-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionWidgets-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOEnSight-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExodus-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExportOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLegacy-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLSDyna-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMINC-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMovie-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIONetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallelXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOPLY-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOSQL-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOTecplotTable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOVideo-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXMLParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjpeg-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjsoncpp-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibharu-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibxml2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklz4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkmetaio-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkNetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtknetcdf_c++.lib;C:\VTK-Vers2\VTK\lib\vtkoggtheora-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkParallelCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkpng-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkproj4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingAnnotation-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContextOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingFreeType-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingGL2PSOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLabel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLOD-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolume-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolumeOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksqlite-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksys-8.0.lib;C:\VTK-Vers2\VTK\lib\vtktiff-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkverdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkzlib-8.0.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\VTK-Vers2\VTK\include\vtk-8.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VTK-Vers2\VTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\VTK-Vers2\VTK\lib\vtkalglib-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkChartsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonComputationalGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonDataModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonExecutionModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMisc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonSystem-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonTransforms-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDICOMParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistryOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexoIIc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexpat-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersExtraction-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersFlowPaths-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneric-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHyperTree-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersModeling-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallelImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersPoints-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersProgrammable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSelection-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSMP-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTexture-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTopology-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersVerdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkfreetype-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkGeovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkgl2ps-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkglew-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5_hl-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingFourier-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMorphological-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStencil-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisLayout-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionStyle-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionWidgets-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOEnSight-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExodus-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExportOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLegacy-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLSDyna-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMINC-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMovie-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIONetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallelXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOPLY-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOSQL-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOTecplotTable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOVideo-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXMLParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjpeg-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjsoncpp-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibharu-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibxml2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklz4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkmetaio-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkNetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtknetcdf_c++.lib;C:\VTK-Vers2\VTK\lib\vtkoggtheora-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkParallelCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkpng-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkproj4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingAnnotation-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContextOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingFreeType-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingGL2PSOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLabel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLOD-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolume-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolumeOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksqlite-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksys-8.0.lib;C:\VTK-Vers2\VTK\lib\vtktiff-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkverdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkzlib-8.0.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\VTK-Vers2\VTK\include\vtk-8.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VTK-Vers2\VTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\VTK-Vers2\VTK\lib\vtkalglib-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkChartsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionStyle-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonComputationalGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonDataModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonExecutionModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMisc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonSystem-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonTransforms-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDICOMParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistryOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexoIIc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexpat-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersExtraction-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersFlowPaths-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneric-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHyperTree-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersModeling-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallelImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersPoints-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersProgrammable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSelection-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSMP-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTexture-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTopology-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersVerdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkfreetype-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkGeovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkgl2ps-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkglew-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5_hl-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingFourier-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMorphological-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStencil-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisLayout-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionWidgets-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOEnSight-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExodus-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExportOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLegacy-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLSDyna-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMINC-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMovie-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIONetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallelXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOPLY-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOSQL-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOTecplotTable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOVideo-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXMLParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjpeg-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjsoncpp-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibharu-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibxml2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklz4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkmetaio-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkNetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtknetcdf_c++.lib;C:\VTK-Vers2\VTK\lib\vtkoggtheora-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkParallelCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkpng-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkproj4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingAnnotation-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContextOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingFreeType-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingGL2PSOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLabel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLOD-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolume-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolumeOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksqlite-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksys-8.0.lib;C:\VTK-Vers2\VTK\lib\vtktiff-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkverdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkzlib-8.0.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\VTK-Vers2\VTK\include\vtk-8.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VTK-Vers2\VTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\VTK-Vers2\VTK\lib\vtkalglib-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkChartsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionStyle-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonComputationalGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonDataModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonExecutionModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMisc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonSystem-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonTransforms-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDICOMParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistryOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexoIIc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexpat-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersExtraction-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersFlowPaths-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneric-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHyperTree-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersModeling-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallelImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersPoints-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersProgrammable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSelection-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSMP-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTexture-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTopology-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersVerdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkfreetype-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkGeovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkgl2ps-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkglew-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5_hl-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingFourier-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMorphological-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStencil-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisLayout-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionWidgets-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOEnSight-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExodus-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExportOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLegacy-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLSDyna-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMINC-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMovie-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIONetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallelXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOPLY-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOSQL-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOTecplotTable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOVideo-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXMLParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjpeg-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjsoncpp-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibharu-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibxml2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklz4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkmetaio-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkNetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtknetcdf_c++.lib;C:\VTK-Vers2\VTK\lib\vtkoggtheora-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkParallelCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkpng-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkproj4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingAnnotation-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContextOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingFreeType-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingGL2PSOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLabel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLOD-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolume-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolumeOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksqlite-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksys-8.0.lib;C:\VTK-Vers2\VTK\lib\vtktiff-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkverdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkzlib-8.0.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\VTK-Vers2\VTK\include\vtk-8.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VTK-Vers2\VTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\VTK-Vers2\VTK\lib\vtkalglib-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkChartsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonComputationalGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonDataModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonExecutionModel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonMisc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonSystem-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkCommonTransforms-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDICOMParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkDomainsChemistryOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexoIIc-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkexpat-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersExtraction-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersFlowPaths-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeneric-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersHyperTree-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersModeling-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersParallelImaging-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersPoints-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersProgrammable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSelection-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSMP-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTexture-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersTopology-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkFiltersVerdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkfreetype-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkGeovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkgl2ps-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkglew-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkhdf5_hl-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingColor-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingFourier-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingGeneral-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingHybrid-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMath-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingMorphological-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingSources-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStatistics-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkImagingStencil-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInfovisLayout-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionStyle-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkInteractionWidgets-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOAMR-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOEnSight-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExodus-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOExportOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOGeometry-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOImport-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLegacy-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOLSDyna-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMINC-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOMovie-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIONetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOParallelXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOPLY-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOSQL-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOTecplotTable-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOVideo-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXML-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkIOXMLParser-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjpeg-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkjsoncpp-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibharu-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklibxml2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtklz4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkmetaio-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkNetCDF-8.0.lib;C:\VTK-Vers2\VTK\lib\vtknetcdf_c++.lib;C:\VTK-Vers2\VTK\lib\vtkoggtheora-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkParallelCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkpng-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkproj4-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingAnnotation-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingContextOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingFreeType-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingGL2PSOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingImage-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLabel-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingLOD-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolume-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkRenderingVolumeOpenGL2-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksqlite-8.0.lib;C:\VTK-Vers2\VTK\lib\vtksys-8.0.lib;C:\VTK-Vers2\VTK\lib\vtktiff-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkverdict-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsContext2D-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsCore-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkViewsInfovis-8.0.lib;C:\VTK-Vers2\VTK\lib\vtkzlib-8.0.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test_vtk.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

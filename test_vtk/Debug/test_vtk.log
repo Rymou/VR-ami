@@ -1,0 +1,3 @@
+﻿  test_vtk.cpp
+c:\users\lenovo g50\documents\visual studio 2017\projects\vtk_projects\test_vtk\test_vtk\test_vtk.cpp(653): warning C4477: 'printf' : la chaîne de format '%d' nécessite un argument de type 'int', mais l'argument variadique 1 est de type 'double'
+  test_vtk.vcxproj -> C:\Users\lenovo g50\Documents\Visual Studio 2017\projects\vtk_projects\test_vtk\Debug\test_vtk.exe
